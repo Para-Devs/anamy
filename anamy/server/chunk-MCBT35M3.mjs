@@ -1,2 +1,0 @@
-import './polyfills.server.mjs';
-import{a as r,b as i,c as n,d as p,e as m,l as f,n as a,o as s,p as c,s as d,y as l}from"./chunk-KRTAUWEV.mjs";var u=(()=>{let o=class o{};o.\u0275fac=function(e){return new(e||o)},o.\u0275cmp=r({type:o,selectors:[["app-root"]],standalone:!0,features:[m],decls:2,vars:0,template:function(e,A){e&1&&(i(0,"h1"),p(1,"TItle"),n())},dependencies:[a],encapsulation:2});let t=o;return t})();var v=[];var g={providers:[l(v),c()]};var y={providers:[d()]},C=f(g,y);var h=()=>s(u,C),z=h;export{z as a};
