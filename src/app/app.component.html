@@ -4,14 +4,12 @@ isHorizontal: $horizontal | async
 
 	<div class="overflow-x-hidden bg-black">
 		<section class="w-full min-h-screen">
-			<div *ngIf="vm.isHorizontal">
-				<video class="w-full" src="assets/images/logo_vid_wide_v1.mp4" autoplay loop></video>
+			<div class="max-md:hidden">
+				<video class="min-h-screen w-full" src="assets/images/logo_vid_wide_v1.mp4" autoplay loop></video>
 			</div>
-
-			<div *ngIf="!vm.isHorizontal">
-				<video class="min-h-screen" src="assets/images/logo_vid.mp4" autoplay loop></video>
+			<div class="md:hidden">
+				<video class="min-h-screen" src="assets/images/logo_vid_v1.mp4" autoplay loop></video>
 			</div>
-
 		</section>
 		<!--<section id="weare"
 						 class="min-w-screen drop-shadow-2xl bg-[rgba(255,255,255,0.8)] justify-center backdrop-blur-sm flex flex-col lg:flex-row place-items-center">
