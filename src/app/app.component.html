@@ -1,15 +1,14 @@
-<ng-container *ngIf="{
+<div *ngIf="{
 isHorizontal: $horizontal | async
 } as vm">
 
 	<div class="overflow-x-hidden bg-black">
 		<section class="w-full min-h-screen">
-			<div *ngIf="vm.isHorizontal; else portrait">
-sdfghjk
+			<div *ngIf="vm.isHorizontal">
 				<video class="w-full" src="assets/images/logo_vid_wide.mp4" autoplay loop></video>
 			</div>
 
-			<div #portrait>
+			<div *ngIf="!vm.isHorizontal">
 
 				<video class="min-h-screen" src="assets/images/logo_vid.mp4" autoplay loop></video>
 			</div>
@@ -37,4 +36,4 @@ sdfghjk
 			</div>
 		</section>-->
 	</div>
-</ng-container>
+</div>
