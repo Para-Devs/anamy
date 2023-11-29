@@ -1,8 +1,6 @@
 import {Component, HostListener} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {RouterOutlet} from '@angular/router';
 import {BehaviorSubject} from 'rxjs';
-import {BrowserModule} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +22,6 @@ export class AppComponent {
   }
 
   setHorizontal() {
-    console.log('set')
     this.$horizontal.next(screen.orientation.type === 'landscape-primary' || screen.orientation.type === 'landscape-secondary');
   }
 
