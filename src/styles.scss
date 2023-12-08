@@ -3,49 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* For Webkit-based browsers (Chrome, Safari and Opera) */
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-/* For IE, Edge and Firefox */
-.scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-.text-animation{
-  animation: leaves 5s ease-in-out infinite alternate;
-  -webkit-animation: leaves 5s ease-in-out infinite alternate;
-}
-
-.background-color{
-  background-color: black;
-}
-
-.anima-logo{
- width: 50%;
-  height: 50%;
-  position: absolute;
-  left: 25%;
-  top:25%;
-  margin: 1rem;
-}
-
 .anima-logo:hover{
   transition: ease-in-out 2s;
   filter: invert(
   100%
   );
 }
-@keyframes
-  leaves {
-  0% {
-    transform: scale(0.0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1.0);
-    opacity: 0.8;
-  }
-}
+
