@@ -1,36 +1,7 @@
-<div *ngIf="{
-isHorizontal: $horizontal | async
-} as vm">
-
-	<div class="overflow-x-hidden bg-black">
-		<section class="w-full min-h-screen">
-			<div class="max-md:hidden">
-				<video class="min-h-screen w-full" src="assets/images/logo_vid_wide_v1.mp4" autoplay loop></video>
-			</div>
-			<div class="md:hidden">
-				<video class="min-h-screen" src="assets/images/logo_vid_v1.mp4" autoplay loop></video>
-			</div>
-		</section>
-		<!--<section id="weare"
-						 class="min-w-screen drop-shadow-2xl bg-[rgba(255,255,255,0.8)] justify-center backdrop-blur-sm flex flex-col lg:flex-row place-items-center">
-			<div class="md:w-full p-8">
-				<h1
-						class="text-4xl font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
-					<span class=" text-3xl text-gray-600 dark:text-grey-500 ">we are...<br></span> NETWORK ARTISTS.
-				</h1>
-				<p class="mt-5 content-text">
-					A 360&#176; music consultancy group and talent
-					buying company that
-					belongs at the
-					heart of music, culture and brands.<br>
-					Who are we? The same as you: curious minds looking to connect deeper than the surface and
-					using music
-					to pursue the future of sound.
-				</p>
-			</div>
-			<div class="w-full">
-				<p>And here you will have an image or so...</p>
-			</div>
-		</section>-->
-	</div>
-</div>
+<section class="w-full min-h-screen flex justify-center items-center bg-black">
+  <img
+    ngSrc="assets/images/AnimaLogoBlack.gif"
+    alt="Animiertes Logo"
+    class="w-full h-auto max-w-6xl"
+    height="300" width="600"/>
+</section>
