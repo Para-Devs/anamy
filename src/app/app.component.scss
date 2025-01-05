@@ -1,0 +1,38 @@
+.subtitle {
+  font-size: 1vw; /* Dynamische Schriftgröße */
+  color: white;
+  margin: 0; /* Kein zusätzlicher Abstand */
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; /* Buchstabenabstand */
+}
+
+.zebra-text {
+  font-size: 26rem; /* Große Schrift */
+  font-weight: bold; /* Fettschrift */
+  text-transform: uppercase; /* Text komplett groß */
+  color: transparent; /* Der Text bleibt transparent */
+  //background: url('./assets/images/zebramuster.webp'); /* Zebra-Muster */
+  background: url('../assets/images/zebramuster.webp'); /* Zebra-Muster */
+  background-size: 400px 100%; /* Mustergröße anpassen */
+  background-repeat: repeat; /* Muster wiederholen */
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: zebra-animation 28s linear infinite;
+  margin-bottom: -8rem; /* Angemessener Abstand für mobile und große Geräte */
+  margin-top: -10rem;
+}
+
+.text-container {
+  text-align: center; /* Zentriere den Text */
+}
+
+@keyframes zebra-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}

@@ -7,34 +7,8 @@ import {BehaviorSubject} from 'rxjs';
   standalone: true,
   imports: [CommonModule, NgOptimizedImage],
   templateUrl: './app.component.html',
-  styles: [],
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  ngAfterViewInit() {
-    const lazyVideos = document.querySelectorAll('.lazy-video');
-
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const video = entry.target as HTMLVideoElement;
-            const sources = video.querySelectorAll('source');
-            sources.forEach((source) => {
-              const dataSrc = source.getAttribute('data-src');
-              if (dataSrc) {
-                source.setAttribute('src', dataSrc);
-              }
-            });
-            video.load(); // Quelle neu laden
-            obs.unobserve(video); // Beobachtung für sichtbare Videos beenden
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    lazyVideos.forEach((video) => observer.observe(video));
-  }
-
 }
 
