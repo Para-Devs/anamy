@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-logo',
+  selector: 'app-home',
   standalone: true,
   imports: [CommonModule],
   template: `
     <section class="min-h-screen bg-black flex justify-center items-center">
       <div class="text-container">
-        <h1 class="zebra-text">Anime</h1>
+        <h1 class="zebra-text">Animy</h1>
         <h2 class="subtitle">music is my mystery</h2>
       </div>
     </section>
@@ -21,7 +21,7 @@ import { CommonModule } from '@angular/common';
       font-weight: lighter;
       font-family: Arial, Helvetica, sans-serif;
       text-transform: uppercase;
-      letter-spacing: 0.1em; /* Buchstabenabstand */
+      letter-spacing: 0.3em; /* Buchstabenabstand */
     }
 
     .zebra-text {
@@ -82,7 +82,7 @@ import { CommonModule } from '@angular/common';
 
     @media (max-width: 480px) {
       .zebra-text {
-        font-size: 8rem; /* Schrift sehr klein */
+        font-size: 7rem; /* Schrift sehr klein */
         margin-bottom: -2rem;
         margin-top: -4rem;
       }
@@ -93,6 +93,6 @@ import { CommonModule } from '@angular/common';
       }
     }`
 })
-export class LogoComponent {
+export class HomeComponent {
 
 }
