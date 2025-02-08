@@ -1,13 +1,12 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 
-// Importiere deine Seitenkomponenten
-import { HomeComponent } from './home/home.component';
-import { BiographyComponent} from "./biography/biography.component";
-import {DjsetsComponent} from "./djsets/djsets.component";
+
+import {HomeComponent} from './home/home.component';
 
 export const routes: Routes = [
-    { path: 'home', component: HomeComponent }, // Home Route
+    { path: '', component: HomeComponent }, // Home Route
+    { path: 'home', redirectTo:'', pathMatch: 'full' }, // Home Route
     {
         path: 'biography',
         loadComponent: () => import('./biography/biography.component').then((m) => m.BiographyComponent),
